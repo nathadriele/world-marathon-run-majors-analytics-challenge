@@ -12,7 +12,6 @@
 [![Records](https://img.shields.io/badge/Records-628K%2B-blue)]()
 [![Models](https://img.shields.io/badge/Models-14%20Trained-success)]()
 [![Dashboard](https://img.shields.io/badge/Dashboard-7%20Pages-FF4B4B)]()
-[![Status](https://img.shields.io/badge/Status-Competition%20Ready-brightgreen)]()
 
 <img width="1192" height="667" alt="img" src="https://github.com/user-attachments/assets/3da8fd00-de52-49cb-9210-c2db7bce0de2" />
 
