@@ -43,11 +43,9 @@
 
 ## Overview
 
-This project presents a full-stack data engineering, analytics, and machine learning pipeline built around the **Abbott World Marathon Majors (WMM)** the six most prestigious marathon races in the world: **Tokyo, Boston, London, Berlin, Chicago, and New York City**. The analysis spans the **2018 through 2025** racing seasons, covering over **628,000 runner records** and **86 verified winner entries** sourced from Wikipedia and official WMM records.
+This project presents a complete data engineering, analytics, machine learning, and Streamlit dashboard pipeline focused on the Abbott World Marathon Majors: Tokyo, Boston, London, Berlin, Chicago, and New York City. Covering the 2018 to 2025 seasons, it analyzes more than 628,000 runner records and 86 verified winner entries, combining realistic simulated runner data with winner information validated through Wikipedia and official WMM records.
 
-This project was developed as a **competition-grade analytics challenge** suitable for Kaggle submissions, technical assessments, and data engineering evaluations. It demonstrates proficiency across the entire data science lifecycle: data generation, validation, feature engineering, predictive modeling, unsupervised learning, and interactive dashboard development. The project is structured to be fully reproducible and self-contained, requiring only standard Python dependencies.
-
-The project functions as both an analytical deep-dive into marathon performance patterns and a Kaggle-style analytics challenge designed to explore predictive modeling on endurance sports data. It includes realistic simulated data generated from carefully calibrated statistical distributions that reflect real-world marathon demographics, performance categories, and pace profiles. The winner data covering every male and female champion across all six majors from 2018 through 2025 has been **verified against Wikipedia and official WMM records** to ensure accuracy at the elite level.
+Designed as a Kaggle-style analytics challenge, the project demonstrates the full data science lifecycle, including data validation, feature engineering, predictive modeling, unsupervised learning, and interactive visualization. It is structured to be reproducible, self-contained, and suitable for portfolio, technical assessments, and data engineering evaluation contexts.
 
 ### What Distinguishes This Project
 
