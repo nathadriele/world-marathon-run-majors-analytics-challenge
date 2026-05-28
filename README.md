@@ -14,6 +14,8 @@
 [![Dashboard](https://img.shields.io/badge/Dashboard-7%20Pages-FF4B4B)]()
 [![Status](https://img.shields.io/badge/Status-Competition%20Ready-brightgreen)]()
 
+<img width="1192" height="667" alt="img" src="https://github.com/user-attachments/assets/3da8fd00-de52-49cb-9210-c2db7bce0de2" />
+
 ---
 
 ## Table of Contents
@@ -41,11 +43,11 @@
 
 ## Overview
 
-This project presents a full-stack data engineering, analytics, and machine learning pipeline built around the **Abbott World Marathon Majors (WMM)** -- the six most prestigious marathon races in the world: **Tokyo, Boston, London, Berlin, Chicago, and New York City**. The analysis spans the **2018 through 2025** racing seasons, covering over **628,000 runner records** and **86 verified winner entries** sourced from Wikipedia and official WMM records.
+This project presents a full-stack data engineering, analytics, and machine learning pipeline built around the **Abbott World Marathon Majors (WMM)** the six most prestigious marathon races in the world: **Tokyo, Boston, London, Berlin, Chicago, and New York City**. The analysis spans the **2018 through 2025** racing seasons, covering over **628,000 runner records** and **86 verified winner entries** sourced from Wikipedia and official WMM records.
 
 This project was developed as a **competition-grade analytics challenge** suitable for Kaggle submissions, technical assessments, and data engineering evaluations. It demonstrates proficiency across the entire data science lifecycle: data generation, validation, feature engineering, predictive modeling, unsupervised learning, and interactive dashboard development. The project is structured to be fully reproducible and self-contained, requiring only standard Python dependencies.
 
-The project functions as both an analytical deep-dive into marathon performance patterns and a Kaggle-style analytics challenge designed to explore predictive modeling on endurance sports data. It includes realistic simulated data generated from carefully calibrated statistical distributions that reflect real-world marathon demographics, performance categories, and pace profiles. The winner data -- covering every male and female champion across all six majors from 2018 through 2025 -- has been **verified against Wikipedia and official WMM records** to ensure accuracy at the elite level.
+The project functions as both an analytical deep-dive into marathon performance patterns and a Kaggle-style analytics challenge designed to explore predictive modeling on endurance sports data. It includes realistic simulated data generated from carefully calibrated statistical distributions that reflect real-world marathon demographics, performance categories, and pace profiles. The winner data covering every male and female champion across all six majors from 2018 through 2025 has been **verified against Wikipedia and official WMM records** to ensure accuracy at the elite level.
 
 ### What Distinguishes This Project
 
@@ -66,11 +68,11 @@ Marathon running produces rich performance data across diverse demographics, cou
 
 ### Objectives
 
-1. **Predict finish time** -- Build regression models to predict marathon finish time (in seconds) based on runner demographics, course characteristics, and split data.
-2. **Classify performance category** -- Develop classification models to assign runners into performance tiers: Elite, Advanced, Intermediate, or Recreational.
-3. **Analyze pacing patterns** -- Investigate how runners distribute effort across the 42.195 km distance, including the prevalence and impact of positive splits, negative splits, and even pacing.
-4. **Profile runner clusters** -- Use unsupervised learning to identify natural groupings of runners based on performance and demographic features.
-5. **Compare races and demographics** -- Quantify differences across the six majors in terms of course speed, participation trends, gender distribution, and national representation.
+1. **Predict finish time**  Build regression models to predict marathon finish time (in seconds) based on runner demographics, course characteristics, and split data.
+2. **Classify performance category**  Develop classification models to assign runners into performance tiers: Elite, Advanced, Intermediate, or Recreational.
+3. **Analyze pacing patterns** Investigate how runners distribute effort across the 42.195 km distance, including the prevalence and impact of positive splits, negative splits, and even pacing.
+4. **Profile runner clusters** Use unsupervised learning to identify natural groupings of runners based on performance and demographic features.
+5. **Compare races and demographics** Quantify differences across the six majors in terms of course speed, participation trends, gender distribution, and national representation.
 
 ### Target Variables
 
@@ -83,16 +85,16 @@ Marathon running produces rich performance data across diverse demographics, cou
 ### Evaluation Metrics
 
 **Regression Metrics:**
-- **MAE** (Mean Absolute Error) -- average absolute prediction error in seconds
-- **RMSE** (Root Mean Squared Error) -- penalizes larger errors more heavily
-- **R-squared** -- proportion of variance explained by the model
-- **MAPE** (Mean Absolute Percentage Error) -- relative prediction accuracy
+- **MAE** (Mean Absolute Error)  average absolute prediction error in seconds
+- **RMSE** (Root Mean Squared Error) penalizes larger errors more heavily
+- **R-squared** proportion of variance explained by the model
+- **MAPE** (Mean Absolute Percentage Error) relative prediction accuracy
 
 **Classification Metrics:**
-- **Accuracy** -- overall correct classification rate
-- **Precision** (weighted) -- correctness of positive predictions per class
-- **Recall** (weighted) -- coverage of actual class members
-- **F1-Score** (weighted) -- harmonic mean of precision and recall
+- **Accuracy** overall correct classification rate
+- **Precision** (weighted) correctness of positive predictions per class
+- **Recall** (weighted) coverage of actual class members
+- **F1-Score** (weighted) harmonic mean of precision and recall
 
 ### Baseline Approach
 
@@ -104,7 +106,7 @@ The baseline for regression uses a **Linear Regression** model with standard fea
 
 The project generates and consumes five primary datasets stored in the `data/` directory.
 
-### 1. `marathon_results.csv` (Raw -- 628,331 rows, 20 columns)
+### 1. `marathon_results.csv` (Raw 628,331 rows, 20 columns)
 
 The primary dataset containing individual runner results across all six World Marathon Majors from 2018 to 2025.
 
@@ -131,7 +133,7 @@ The primary dataset containing individual runner results across all six World Ma
 | `split_35k_sec` | float | Cumulative time at 35 km (seconds) |
 | `split_40k_sec` | float | Cumulative time at 40 km (seconds) |
 
-### 2. `winners_data.csv` (Raw -- 86 rows, 10 columns)
+### 2. `winners_data.csv` (Raw 86 rows, 10 columns)
 
 Verified winner data for every WMM race from 2018 to 2025, including both male and female divisions. Data has been cross-referenced with Wikipedia and official WMM records.
 
@@ -148,7 +150,7 @@ Verified winner data for every WMM race from 2018 to 2025, including both male a
 | `country_held` | str | Country where the race was held |
 | `month` | int | Month the race was held (numeric) |
 
-### 3. `race_metadata.csv` (Raw -- 43 rows, 16 columns)
+### 3. `race_metadata.csv` (Raw 43 rows, 16 columns)
 
 Metadata for each race edition, including course characteristics, participation estimates, weather notes, and course record holders.
 
@@ -171,7 +173,7 @@ Metadata for each race edition, including course characteristics, participation 
 | `course_record_female_time` | str | Female course record time |
 | `course_record_female_year` | int | Year the female record was set |
 
-### 4. `brazilian_runners_analysis.csv` (Processed -- 18,087 rows, 26 columns)
+### 4. `brazilian_runners_analysis.csv` (Processed 18,087 rows, 26 columns)
 
 A filtered and enriched subset of marathon results for Brazilian runners (country code `BRA`), including additional fields specific to the Brazil analysis.
 
@@ -186,7 +188,7 @@ A filtered and enriched subset of marathon results for Brazilian runners (countr
 | `boston_qualified` | int | Whether the runner met Boston qualifying standard (1=yes, 0=no) |
 | `avg_pace_sec_per_km` | float | Average pace in seconds per kilometer |
 
-### 5. `pace_splits_analysis.csv` (Processed -- 5,430,204 rows, 14 columns)
+### 5. `pace_splits_analysis.csv` (Processed 5,430,204 rows, 14 columns)
 
 Long-format dataset where each row represents a single segment (5K, 10K, ..., 40K) for a single finisher. This enables granular segment-by-segment pace analysis.
 
@@ -275,10 +277,10 @@ Performance categories are gender-specific, reflecting physiological differences
 
 The project follows a four-layer architecture:
 
-1. **Data Layer** -- CSV-based storage with raw and processed directories, housing over 6 million total records across five datasets.
-2. **Data Processing Layer** -- A 16-step generation pipeline, data cleaning, validation, and running metrics calculation.
-3. **Analytics and ML Layer** -- Feature engineering, five regression models, three classification models, and K-Means clustering.
-4. **Presentation Layer** -- A 7-page Streamlit dashboard with Plotly charts, custom CSS styling, and a global filter system.
+1. **Data Layer** CSV-based storage with raw and processed directories, housing over 6 million total records across five datasets.
+2. **Data Processing Layer** A 16-step generation pipeline, data cleaning, validation, and running metrics calculation.
+3. **Analytics and ML Layer** Feature engineering, five regression models, three classification models, and K-Means clustering.
+4. **Presentation Layer** A 7-page Streamlit dashboard with Plotly charts, custom CSS styling, and a global filter system.
 
 ---
 
@@ -419,10 +421,6 @@ Participation trends reveal a clear COVID-19 impact. Four of six races were canc
 
 The relationship between age and finish time follows a U-shaped curve, with peak performance occurring in the late 20s to early 30s. After age 35, finish times gradually increase. Male and female trend lines show parallel patterns, with the gender gap remaining relatively consistent across all age groups.
 
-### Split Type Distribution
-
-![Split Type Distribution](reports/figures/split_type_distribution.png)
-
 The overwhelming majority of runners produce positive splits, meaning they run the second half of the marathon slower than the first. This finding is consistent with the well-documented tendency to start too aggressively. Only a small fraction achieves negative splits, and an even smaller group manages even pacing within a 30-second tolerance.
 
 ### Pace Progression by Performance Category
@@ -431,11 +429,135 @@ The overwhelming majority of runners produce positive splits, meaning they run t
 
 Pace progression patterns differ markedly across performance categories. Elite runners maintain nearly flat pace profiles throughout the entire 42.195 km distance, with only marginal deceleration in the final 5 km. Recreational runners show a pronounced slowdown after 30 km, reflecting glycogen depletion and the well-known "hitting the wall" phenomenon. The 30-35 km segment represents the point of greatest pace deterioration for non-elite athletes.
 
+# World Marathon Majors Analytics Dashboard
+
+<img width="2518" height="1300" alt="1" src="https://github.com/user-attachments/assets/13d43603-7121-4629-82af-03d9695a976f" />
+
+1. **Project Overview**
+This dashboard presents an interactive analytical view of the World Marathon Majors, covering major races such as Berlin, Boston, Chicago, London, New York, and Tokyo.
+
+2. **Key Performance Indicators**
+The main page summarizes essential metrics, including total races, years analyzed, total finishers, countries represented, and the best male and female finishing times.
+
+3. **Interactive Analysis Structure**
+The sidebar organizes the project into sections for race comparison, winners and records, Brazil analysis, pace and splits, machine learning, and project methodology.
+
+## Race Pace Analysis by Marathon
+
+<img width="2471" height="1090" alt="4" src="https://github.com/user-attachments/assets/5c9b7a84-287e-4434-b193-8a709f9c39eb" />
+
+1. **Average Pace Comparison**
+The chart compares the average pace per kilometer across the six World Marathon Majors: Berlin, Boston, Chicago, Tokyo, London, and New York City.
+
+2. **Fastest and Slowest Race Profiles**
+Berlin and Boston show the fastest average pace at 5:08 min/km, while New York City presents the slowest average pace at 5:15 min/km.
+
+3. **Detailed Pace Statistics**
+The table summarizes key pace metrics for each race, including mean pace, median pace, fastest pace, slowest pace, and standard deviation, supporting a more precise comparison of runner performance across marathons.
+
+## Participant Volume and COVID-19 Impact
+
+<img width="2487" height="1303" alt="5" src="https://github.com/user-attachments/assets/cd4c412e-e580-466a-a7fe-d31612b9ea55" />
+
+1. **Participant Volume by Race and Year**
+The first chart compares the total number of finishers across the World Marathon Majors from 2018 to 2025, showing yearly participation patterns for each race.
+
+2. **COVID-19 Participation Drop**
+The second chart highlights the strong impact of COVID-19, especially in 2020 and 2021, when several races had reduced participation or interruptions.
+
+3. **Post-Pandemic Recovery**
+From 2022 onward, most races show a clear recovery in participant volume, with New York, London, Chicago, Berlin, Boston, and Tokyo returning closer to pre-pandemic levels.
+
+
+## Winners’ Performance and Pace Evolution
+
+<img width="2476" height="1209" alt="6" src="https://github.com/user-attachments/assets/858c2bb1-dc2e-46f9-afdc-f65aa6f1e717" />
+
+1. **Winning Time Trends**
+The charts show how male and female winning times evolved across the World Marathon Majors, allowing comparison between races and years.
+
+2. **Gender-Based Performance Analysis**
+Separate visualizations for male and female winners make it easier to identify performance differences, race-specific patterns, and yearly variations.
+
+3. **Winner Pace Comparison**
+The pace chart summarizes the winning pace per kilometer by race and year, highlighting which marathons and editions produced the fastest performances.
+
+## Countries, Victories and Course Records
+
+<img width="2476" height="1209" alt="7" src="https://github.com/user-attachments/assets/41f5cdd4-394a-4142-85b2-c6d93859b85a" />
+
+1. **Dominance by Country**
+The charts show the distribution of victories by runner nationality, highlighting Kenya as the leading country, followed by Ethiopia.
+
+2. **Victory Distribution**
+The donut chart summarizes each country’s share of total wins, making it easier to identify the strongest nations across the World Marathon Majors.
+
+3. **Course Record Summary**
+The records table presents the fastest male and female course records by race, including athlete name, country, year, and official winning time.
+
+## Dominant Athletes and Winning Time Statistics
+
+<img width="2471" height="1325" alt="8" src="https://github.com/user-attachments/assets/edd591c6-6abe-4533-afe3-004128a1e3d3" />
+
+1. **Most Dominant Athletes**
+The table highlights the athletes with the highest number of World Marathon Majors victories, showing their country, winning period, best time, and races won.
+
+2. **Elite Performance Leadership**
+Eliud Kipchoge stands out as the leading athlete in the dataset, with 6 victories between 2018 and 2025, followed by other highly consistent Kenyan and Ethiopian runners.
+
+3. **Winning Time Summary**
+The KPI cards summarize overall, male, and female winning-time statistics, including average winning time, fastest winning time, and slowest winning time.
+
+## Brazilian Pace Analysis and Historical Highlights
+<img width="2399" height="1279" alt="11" src="https://github.com/user-attachments/assets/d2ace79a-95b3-4448-bd98-2852994f3e2c" />
+
+1. **Brazilian Pace Distribution**
+The histogram shows the distribution of Brazilian runners’ pace compared with the global average, with the Brazilian mean marked at 5:17 min/km.
+
+2. **Brazilian Marathon Milestones**
+The section highlights major Brazilian achievements, including Marilson Gomes dos Santos’ New York Marathon victories and Ronaldo da Costa’s former marathon world record in Berlin.
+
+3. **Brazilian Representation Growth**
+The analysis emphasizes the increasing presence of Brazilian runners in the World Marathon Majors, suggesting broader participation and gradual improvement in performance over time.
+
+## Segment Pace Heatmap and Post-30 km Drop
+
+<img width="2403" height="1168" alt="14" src="https://github.com/user-attachments/assets/17bebc43-86a2-445c-b49c-7af3e7479bd0" />
+
+1. **Pace by Race Segment**
+The heatmap compares average pace across marathon segments, showing how rhythm changes from the first 5 km to the 35–40 km segment for each race.
+
+2. **Performance Drop After 30 km**
+The second chart highlights the increase in pace from the first to the second half, indicating a consistent slowdown pattern after the critical 30 km phase.
+
+3. **Race Strategy Insight**
+These visualizations help identify where runners lose efficiency, supporting analysis of pacing strategy, endurance decline, and race-specific difficulty.
+
+## Data Sources and Marathon Metrics
+
+<img width="2294" height="1325" alt="16" src="https://github.com/user-attachments/assets/db6ff6bb-bd62-4136-9570-988769ff964f" />
+
+1. **Public Data Sources**
+The project documents the main data sources used, including Kaggle datasets, official marathon results, World Athletics rankings, Wikipedia winner records, and race-specific official sources.
+
+2. **Data Integrity and Traceability**
+The section emphasizes that the analysis is based on public, auditable marathon data, with notes about data provenance, official references, and the use of simulated data only when complete historical datasets are unavailable.
+
+3. **Core Running Metrics**
+The metrics table defines the main variables used in the analysis, such as finish time, pace per kilometer, pace per mile, average speed, splits, negative split, and positive split.
+
+## Split Statistics and Consistent Pace Analysis
+
+<img width="2385" height="965" alt="15" src="https://github.com/user-attachments/assets/800380c2-e3d9-441f-886d-0a36f2e63a90" />
+
+1. **Segment Pace Statistics**
+The table summarizes average pace across marathon segments by performance category, showing clear differences between elite, advanced, intermediate, and recreational runners. The second table identifies runners with the lowest pace standard deviation, indicating athletes who maintained a more stable rhythm across all 5 km segments.
+
 ---
 
 ## Machine Learning
 
-### Regression -- Finish Time Prediction
+### Regression Finish Time Prediction
 
 **Goal:** Predict `finish_seconds` using runner demographics, race information, and mid-race split data.
 
@@ -516,13 +638,13 @@ All trained models are serialized and stored in `models/trained/`:
 
 The `build_features.py` module creates additional features:
 
-- `performance_category` -- Gender-specific categorization based on finish time thresholds
-- `age_group` -- Standard running age groups (18-24, 25-34, 35-44, 45-54, 55-64, 65+)
-- `age_x_gender` -- Interaction feature (age * gender_encoded)
-- `pace_x_gender` -- Interaction feature (pace * gender_encoded)
-- `age_squared` / `age_cubed` -- Polynomial age features
+- `performance_category` Gender-specific categorization based on finish time thresholds
+- `age_group` Standard running age groups (18-24, 25-34, 35-44, 45-54, 55-64, 65+)
+- `age_x_gender` Interaction feature (age * gender_encoded)
+- `pace_x_gender` Interaction feature (pace * gender_encoded)
+- `age_squared` / `age_cubed` Polynomial age features
 - Per-segment pace features: `pace_0_5k` through `pace_40_finish`
-- `pace_variation` -- Standard deviation across all segment paces
+- `pace_variation` Standard deviation across all segment paces
 
 ---
 
@@ -614,8 +736,8 @@ Brazil has a growing presence in the World Marathon Majors. This project include
 
 ### Course Characteristics
 
-- **Berlin is the fastest course** -- Its flat, fast profile and typically favorable weather conditions make it the preferred venue for world record attempts. The course has produced multiple world records.
-- **New York City is the most challenging** -- With 250m of elevation gain and a hilly course through five boroughs, NYC consistently produces the slowest winning times among the six majors.
+- **Berlin is the fastest course** Its flat, fast profile and typically favorable weather conditions make it the preferred venue for world record attempts. The course has produced multiple world records.
+- **New York City is the most challenging** With 250m of elevation gain and a hilly course through five boroughs, NYC consistently produces the slowest winning times among the six majors.
 - **Boston** is unique as a net-downhill point-to-point course (230m elevation loss), but its hills (notably Heartbreak Hill at miles 20-21) make it deceptively difficult.
 
 ### COVID-19 Impact
